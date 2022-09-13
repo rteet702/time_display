@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container p-5">
+        <h1 class="fs-4 p-5 text-center border border-3 border-dark w-50 mx-auto">The current date and time:</h1>
+        <div class="row p-5 w-75 mx-auto border border-3 border-dark">
+            <p class="text-center fs-1">{{ date }}</p>
+            <p class="text-center fs-1">{{ time }}</p>
+        </div>
+    </div>
+</body>
+</html>
